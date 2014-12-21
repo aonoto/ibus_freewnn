@@ -21,6 +21,12 @@
 			<longname>FreeWnn</longname>
 			<description>FreeWnn Input Method</description>
 			<rank>0</rank>
+			<!-- symbol for iBus 1.4+ -->
+			<!-- Currently set it to (non-standard in
+			     Japanese IM) 'U' (in Hiragana), which
+			     means first letter of Wnn in Hiragana
+			     (pronunciation). -->
+			<symbol>&#x3046;</symbol>
 		</engine>
 	</engines>
 

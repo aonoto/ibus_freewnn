@@ -243,6 +243,7 @@ ibus_fwnn_engine_process_key_event (IBusEngine *engine,
 	if (modifiers & IBUS_RELEASE_MASK)
 		return FALSE;
 
+	modifiers &= IBUS_MODIFIER_MASK;	/* Ignore modifier from Xkb */
 	if (modifiers != 0) {
 		if (fwnn->preedit->len == 0)
 			return FALSE;
